@@ -26,3 +26,21 @@ def number_guessing_game():
             break
 
 number_guessing_game()
+
+Bike Animation 
+import time
+import os
+
+bike = "  __o\n _ \<_\n(_)/(_)"
+
+def clear():
+    # Clear the screen
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def move_bike():
+    for i in range(40):
+        clear()
+        print(" " * i + bike)
+        time.sleep(0.1)
+
+move_bike()
